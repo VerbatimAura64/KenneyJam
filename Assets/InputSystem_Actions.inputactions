@@ -25,12 +25,21 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Attack",
+                    "name": "Shrink",
                     "type": "Button",
                     "id": "6c2ab1b8-8984-453a-af3d-a3c78ae1679a",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press,Hold",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Grow",
+                    "type": "Button",
+                    "id": "4c17105f-7817-476f-bd0d-12d2f7102668",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press,Hold",
                     "initialStateCheck": false
                 },
                 {
@@ -91,6 +100,15 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "866ef2f5-e645-4daa-973d-ea93b4265b32",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Drag",
+                    "type": "Button",
+                    "id": "d0d99f65-92c2-46a4-9598-daeb449b08d9",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -270,7 +288,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Attack",
+                    "action": "Shrink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -278,10 +296,10 @@
                     "name": "",
                     "id": "05f6913d-c316-48b2-a6bb-e225f14c7960",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press,Hold",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Attack",
+                    "action": "Shrink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -292,7 +310,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Attack",
+                    "action": "Shrink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -303,7 +321,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Attack",
+                    "action": "Shrink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -314,7 +332,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
-                    "action": "Attack",
+                    "action": "Shrink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -325,7 +343,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Attack",
+                    "action": "Shrink",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -489,8 +507,30 @@
                     "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f17b783-a455-4455-8b17-87cabe6e430e",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press,Hold",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Grow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d97b5ff7-1e92-4da2-ad90-a3a75ef9a354",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Drag",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

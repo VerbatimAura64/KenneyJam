@@ -924,11 +924,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 236fec1e-ee0e-4c12-a080-9af21eadd1ad
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: VerbatimEssentials
-  organizationId: 
+  projectName: KenneyJam
+  organizationId: lighthouse-productions
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

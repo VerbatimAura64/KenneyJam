@@ -4,24 +4,29 @@ using Harborview.GameTools;
 public class GM : MonoBehaviour, IGameState
 {
     bool isPaused { get; set; }
+    public GameObject pauseScreen;
 
     bool IGameState.IsPaused => isPaused;
 
     void IGameState.PauseGame()
     {
-        if(isPaused)
-        { 
+        isPaused = !isPaused;
+        if (isPaused)
+        {
             Time.timeScale = 0;
+            pauseScreen.SetActive(true);
         }
-        else {
+        else
+        {
             Time.timeScale = 1;
+            pauseScreen.SetActive(false);
         }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        pauseScreen.SetActive(false);
     }
 
     // Update is called once per frame
