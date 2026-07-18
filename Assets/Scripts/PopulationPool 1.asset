@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d68019c20dc0e347b31938fd5e96c94, type: 3}
+  m_Name: PopulationPool 1
+  m_EditorClassIdentifier: Lighthouseproductions.Gametools::Harborview.GameTools.PopulationPool
+  decoyPrefabs:
+  - prefab: {fileID: 919132149155446097, guid: cd50bfde4b177864db3c337e74fb5309, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: db7aaeb961aa60247b7e2bc6a1a52655, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: 57de3b07174f1324bb2d865e17c93c91, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: d845fe7f26d884e44955a4454732fc2f, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: 80861c6c64c9bd94192b1774715988cb, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: 1c45b74c0857bf24b8564be87e0c0d8e, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: 17b87fd0e9fe3344b97bf10c504f2e73, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: 793a79f311e048444811735246738d5a, type: 3}
+    weight: 2
+  - prefab: {fileID: 919132149155446097, guid: 59dfb321a4b4fb346a0dc0b37140103e, type: 3}
+    weight: 2
+  targetPrefab: {fileID: 919132149155446097, guid: 57de3b07174f1324bb2d865e17c93c91, type: 3}
