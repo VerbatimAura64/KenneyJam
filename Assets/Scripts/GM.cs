@@ -5,6 +5,8 @@ public class GM : MonoBehaviour, IGameState
 {
     bool isPaused { get; set; }
     public GameObject pauseScreen;
+    public int totalStars;
+    public int totalRunes;
 
     bool IGameState.IsPaused => isPaused;
 
