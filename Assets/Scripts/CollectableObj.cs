@@ -5,6 +5,7 @@ public class CollectableObj : MonoBehaviour
 {
     public AudioSource sound;
     public GM gm;
+    public GameObject sparks;
     public bool rune;
     public int scoreValue;
     public float rotateSpeed;
@@ -40,17 +41,24 @@ public class CollectableObj : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             //Debug.LogError("TREASURE FOUND!");
-            //sound.Play();
+            sound.Play();
             if (rune)
             {
                 gm.totalRunes++;
+                this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                this.gameObject.GetComponent<BoxCollider>().enabled = false;
+                sparks.SetActive(false);
             } else
             {
                 gm.totalStars++;
+                this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                this.gameObject.GetComponent<MeshCollider>().enabled = false;
             }
                 
             //gm.gameObject.GetComponent<Spawner>().spawnCount--;
-            this.gameObject.SetActive(false);
+
+            //this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            //this.gameObject.GetComponent<MeshCollider>().enabled = false;
             //StartCoroutine(WaitAndDestroy());
         }
     }

@@ -1,5 +1,7 @@
 using UnityEngine;
 using Harborview.GameTools;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour, IGameState
 {
@@ -7,6 +9,11 @@ public class GM : MonoBehaviour, IGameState
     public GameObject pauseScreen;
     public int totalStars;
     public int totalRunes;
+    public GameObject frontDoor;
+    public TextMeshProUGUI starsText;
+    public TextMeshProUGUI runeText;
+    public int countRunes;
+    public int countStars;
 
     bool IGameState.IsPaused => isPaused;
 
@@ -28,12 +35,34 @@ public class GM : MonoBehaviour, IGameState
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       
         pauseScreen.SetActive(false);
+        countRunes = GameObject.FindGameObjectsWithTag("Rune").Length;
+        countStars = GameObject.FindGameObjectsWithTag("Star").Length;
+        //foreach (GameObject.FindGameObjectWithTag("Rune") in ) { countRunes++};
+
     }
+
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        starsText.text = totalStars.ToString();
+        runeText.text = totalRunes.ToString();
+        RevealPrize();
+    }
+
+    void RevealPrize()
+    {
+        if (totalStars == countStars && totalRunes == countRunes)
+        {
+            frontDoor.SetActive(false);
+        }
     }
 }
