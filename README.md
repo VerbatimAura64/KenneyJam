@@ -5,7 +5,7 @@ A first-person hub-based puzzle game built solo in Unity for Kenney Jam
 and shrink objects, dragging them through 3D space to reach new heights 
 and solve environmental puzzles.
 
-**[Play on itch.io](https://harborviewgames.itch.io)**
+**[Play on itch.io](https://harborviewgames.itch.io/honey-i-shrunk-myself)**
 
 ---
 
