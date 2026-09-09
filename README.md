@@ -6,7 +6,7 @@ and shrink objects, dragging them through 3D space to reach new heights
 and solve environmental puzzles.
 
 **[Play on itch.io](https://harborviewgames.itch.io/honey-i-shrunk-myself)**
-
+**[Read the case study](https://verbatimaura64.github.io/case_study/hism.html)**
 ---
 
 ## About
